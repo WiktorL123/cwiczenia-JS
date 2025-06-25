@@ -18,10 +18,24 @@ const normalizeName = function (name) {
     const lower = name.toLowerCase();
     return lower[0].toUpperCase() + lower.slice(1);
 };
-
 const normalizedNames = (names) => names.map(normalizeName);
 
-const newNames = normalizedNames(weirdNames);
+const lowerCaseName = 'wiktor l, anna l,'.split(', ')
+const [wiktor, anna] = lowerCaseName
 
-console.log(newNames);
-console.log(weirdNames);
+const splittedWiktor = wiktor.split(' ')
+const splittedAnna = anna.split(' ')
+
+const normalizedWiktor = normalizedNames(splittedWiktor).join(' ')
+const normalizedAnna = normalizedNames(splittedAnna).join(' ')
+
+console.log(`anna ${normalizedAnna} i wiktor ${normalizedWiktor}`)
+
+
+const creditCardNumber = 322428425252
+const maskCreditCardNumber = function (number) {
+    const str = String(number)
+    return str.slice(-4).padStart(str.length, '*')
+};
+
+console.log('masked:', maskCreditCardNumber(creditCardNumber))

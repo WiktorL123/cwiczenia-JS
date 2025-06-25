@@ -1,0 +1,5 @@
+console.log('ala ma kota'.toUpperCase())
+console.log(' test '.trim())
+console.log(['Ala', 'ma', 'kota'].join(' '))
+console.log('Test'.slice(-1))
+console.log('javascript'.toLowerCase().startsWith('Java'.toLowerCase()))
