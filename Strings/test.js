@@ -39,3 +39,5 @@ const maskCreditCardNumber = function (number) {
 };
 
 console.log('masked:', maskCreditCardNumber(creditCardNumber))
+
+
