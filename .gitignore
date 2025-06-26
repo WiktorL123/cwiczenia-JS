@@ -3,3 +3,5 @@ node_modules/
 package.json
 alg.js
 Strings/test.js
+Function/test.js
+offtop/*
