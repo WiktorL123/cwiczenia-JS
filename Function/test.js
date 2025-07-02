@@ -42,3 +42,13 @@ console.log(flight)
     }
     const greeter = greet('siema')
     greeter('adam')
+//closures
+
+console.log('-'.repeat(25) + 'closures' + '-'.repeat(25))
+let f
+let g =function (){
+    const a =23
+    f =function (){
+        console.log(a*2)
+    }
+}
